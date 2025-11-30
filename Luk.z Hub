@@ -406,8 +406,7 @@ local Button = Tab:CreateButton({
    Image = "key",
 })
 local ProximityPromptService = game:GetService("ProximityPromptService")
-local instantInteractEnabled = truehttps://github.com/lukie413/Luk.z-Tester/blob/main/Luk.z%20Hub
-
+local instantInteractEnabled = true
 ProximityPromptService.PromptButtonHoldBegan:Connect(function(prompt, player)
     if instantInteractEnabled then
         fireproximityprompt(prompt)
