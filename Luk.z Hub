@@ -91,7 +91,7 @@ local Button = Tab:CreateButton({
 local Button = Tab:CreateButton({
    Name = "Darkones hub (Keyless 2nd)",
    Callback = function()
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/99%20Nights%20In%20The%20Fores
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/99%20Nights%20In%20The%20Forest%20GUI'))()
    end,
 })
    Name = "Voidware (Keyless 3rd)",
