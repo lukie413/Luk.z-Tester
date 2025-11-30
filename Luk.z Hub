@@ -1,0 +1,441 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local playerDisplayName = game.Players.LocalPlayer.DisplayName
+local Window = Rayfield:CreateWindow({
+   Name = "Luk.z 0.1.5 | BETA USER | " .. playerDisplayName,
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Good afternoon " .. playerDisplayName,
+   LoadingSubtitle = "by Lukie",
+   ShowText = "lukiexz on discord", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "AmberGlow", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   ToggleUIKeybind = "P", -- The keybind to toggle the UI visibility (string like "K" or Enum.KeyCode)
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = true, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Luk.z Hub"
+   },
+
+   Discord = {
+      Enabled = True, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "Dw24WswYAv", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = False -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+Rayfield:Notify({
+   Title = "Luk.z Said",
+   Content = "Please join our discord server to support us :) (.gg/Dw24WswYAv)",
+   Duration = 8.5,
+   Image = "moon",
+})
+local Tab = Window:CreateTab("Your bizzare adventure", "sword")
+local Section = Tab:CreateSection("YBA SCRIPTS")
+local Button = Tab:CreateButton({
+   Name = "Era hub (KEY 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/fdbac487b2e7ceafb89f7c26351fddb6.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Xenon v3 (Keyless 2nd)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Vezise/vezzyscripts/main/xenonv3_source"))()
+   end,
+})
+local Tab = Window:CreateTab("Bee swarm simulator", "tractor")
+local Section = Tab:CreateSection("Bee swarm simulator scripts")
+local Button = Tab:CreateButton({
+   Name = "Atlas (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Chris12089/atlasbss/main/script.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Macro v4 (Key 2nd)",
+   Callback = function()
+   loadstring(game:HttpGet("https://macroware.cc/loader.lua"))()
+   end,
+})
+local Tab = Window:CreateTab("Murder Mystery 2", "slice")
+local Section = Tab:CreateSection("Murder Mystery 2 scripts")
+local Button = Tab:CreateButton({
+   Name = "Eclipse hub (Keyless 1st)",
+   Callback = function()
+   getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+   end,
+})
+local Tab = Window:CreateTab("99 Nights in the forest", "Tree-Pine")
+local Section = Tab:CreateSection("99 Nights in the forest scripts")
+local Button = Tab:CreateButton({
+   Name = "Voidware (Keyless 1st)",
+   Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/loader.lua", true))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Cps hub (Keyless 2nd)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Rx1m/CpsHub/refs/heads/main/Hub",true))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Foxname (Keyless 3rd)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/FoxnameHub.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Gec (Keyless 4th)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/GEC0/gec/refs/heads/main/Gec.Loader", true))()
+   end,
+})
+local Tab = Window:CreateTab("Steal a brainrot", "Circle-Dollar-Sign")
+local Section = Tab:CreateSection("This section copys the discord because the hub is detected in Steal a brainrot & it cant set as clip board!")
+local Button = Tab:CreateButton({
+   Name = "Ugly hub (Keyless 1st)",
+   Callback = function()
+   setclipboard("https://discord.gg/5NsdUkrEA9")
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Ugly fisher (Keyless)",
+   Callback = function()
+   setclipboard("https://discord.gg/5NsdUkrEA9")
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Chilli hub (Keyless 2nd)",
+   Callback = function()
+   setclipboard("https://discord.gg/SGA6UXfr")
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Lemon hub (Keyless 3rd)",
+   Callback = function()
+   setclipboard("https://discord.gg/lemonhub")
+   end,
+})
+local Tab = Window:CreateTab("The strongest battle grounds", "Shield-Alert")
+local Section = Tab:CreateSection("TSBG scripts")
+local Button = Tab:CreateButton({
+   Name = "Phantasm (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/Phantasm/refs/heads/main/Games/TSB.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Kj (Eqiup The strongest hero)",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/jNQ6VEX1'))()
+   end,
+})
+local Tab = Window:CreateTab("Build a boat for tresurae", "Ship")
+local Section = Tab:CreateSection("Build a boat for treasure scripts")
+local Button = Tab:CreateButton({
+   Name = "Lexushub X (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/102KIRA/Best-Babft-script/refs/heads/main/Actually%20Best%20babft%20script"))()
+   end,
+})
+local Tab = Window:CreateTab("Tower of hell", "tower-control")
+local Section = Tab:CreateSection("Tower of hell scripts")
+local Button = Tab:CreateButton({
+   Name = "Rb code (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/yyeptech/thebighubs/refs/heads/main/toh.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Proxima Hub (Keyless 2nd)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Sprin hub (TRASH & KEYLESS)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/dqvh/dqvh/main/SprinHub",true))()
+   end,
+})
+local Tab = Window:CreateTab("Please donate", "banknote")
+local Section = Tab:CreateSection("Please donate scripts")
+local Button = Tab:CreateButton({
+   Name = "Szze (BEST & KEYLESS)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+   end,
+})
+local Tab = Window:CreateTab("Bedwars", "bed-single")
+local Section = Tab:CreateSection("Bedwars scripts")
+local Button = Tab:CreateButton({
+   Name = "Vape V4 (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+   end,
+})
+local Tab = Window:CreateTab("Epic mini games", "smile")
+local Section = Tab:CreateSection("Epic mini games scripts")
+local Button = Tab:CreateButton({
+   Name = "Epic Mini games (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Epic%20Minigames/EpicMinigamesGUI"))()
+   end,
+})
+local Tab = Window:CreateTab("Spelling bee", "keyboard")
+local Section = Tab:CreateSection("Spelling bee scripts")
+local Button = Tab:CreateButton({
+   Name = "Preppy hub (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/PreppyHub/PreppyHub/refs/heads/main/PreppyHub"))() 
+   end,
+})
+local Tab = Window:CreateTab("Ink game", "gamepad-2")
+local Section = Tab:CreateSection("Ink game scripts")
+local Button = Tab:CreateButton({
+   Name = "Ringta (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/wefwef34/inkgames.github.io/refs/heads/main/ringta.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Stack Zero (2nd Keyless)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/boregondev/SKYSCRIPTS/refs/heads/main/SKYSCRIPTS.lua",true))()
+   end,
+})
+local Tab = Window:CreateTab("Blade ball", "swords")
+local Section = Tab:CreateSection("Blade ball scripts")
+local Button = Tab:CreateButton({
+   Name = "Argon Hub X (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AgentX771/ArgonHubX/main/Loader.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Auto parry (Keyless 2nd)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Akash1al/Blade-Ball-Updated-Script/refs/heads/main/Blade-Ball-Script"))()
+   end,
+})
+local Tab = Window:CreateTab("Race clicker", "mouse-pointer-2")
+local Section = Tab:CreateSection("Race clicker script")
+local Button = Tab:CreateButton({
+   Name = "Race clicker (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/Saaakai/Random-Roblox-Script/main/Race%20Clicker')))()
+   end,
+})
+local Tab = Window:CreateTab("Rivals", "axe")
+local Section = Tab:CreateSection("Rivals scripts")
+local Button = Tab:CreateButton({
+   Name = "8Bits (Key 1st)",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/8bits4ya/rivals-v3/refs/heads/main/main.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Z3US (Keyless 2nd)",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/blackowl1231/Z3US/refs/heads/main/main.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Azure (Keyless 3rd)",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+   end,
+})
+local Tab = Window:CreateTab("Murders vs sheriffs", "slice")
+local Section = Tab:CreateSection("Murders vs sheriffs script")
+local Button = Tab:CreateButton({
+   Name =  " Zephyr (Keyless 1st)",
+   Callback = function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TheRealAvrwm/Zephyr-V2/refs/heads/main/ZephyrV2", true))()
+   end,
+})
+local Tab = Window:CreateTab("Raise a floppa 2", "cat")
+local Section = Tab:CreateSection("Raise a floppa 2 scripts")
+local Button = Tab:CreateButton({
+   Name = "JNJs Hub (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://protected-roblox-scripts.onrender.com/dd3c5fed774a0d15d9a9fbf78971fa2f"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "RIP Gui (Keyless 2nd)",
+   Callback = function()
+   _G.RedGUI = true
+_G.Theme = "Dark" -- Must disable or remove _G.RedGUI to use
+--Themes: Light, Dark, Mocha, Aqua and Jester
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/raiseafloppa.lua"))()
+   end,
+})
+local Tab = Window:CreateTab("Throw stuff for money", "dollar-sign")
+local Section = Tab:CreateSection("Throw stuff for money script")
+local Button = Tab:CreateButton({
+   Name = "Throw stuff for money script (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/Throwstuff"))() 
+   end,
+})
+local Tab = Window:CreateTab("The 100,000,000 glass bridge", "brick-wall")
+local Section = Tab:CreateSection("The 100,000,000 glass bridge scripts")
+local Button = Tab:CreateButton({
+   Name = "Argon hub X (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/AgentX771/ArgonHubX/main/Loader.lua", true))() 
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Zx (Key 2nd)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ZhenX201/Thee-Glass-Bridge/refs/heads/main/sauce",true))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "KhSaeedHub (Key 3rd)",
+   Callback = function()
+   loadstring(game:HttpGet('https://github.com/KhSaeed90/Roblox/raw/refs/heads/workspace/87854376962069'))()
+   end,
+})
+local Tab = Window:CreateTab("Hypershot", "swords")
+local Section = Tab:CreateSection("Hypershot scripts")
+local Button = Tab:CreateButton({
+   Name = "Valor Hub (Keyless 1st)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/eselfins31/Valor-Hub/main/Hypershot%20V2/Unified_protected.lua", true))() 
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Reaper.gg (Keyless 2nd | ORION HUB WARNING)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/herobrine29302/zephyr/refs/heads/main/Reaper.GG-Hypershot",true))()
+   end,
+})
+local Tab = Window:CreateTab("Dahood", "circle-user")
+local Section = Tab:CreateSection("Dahood script")
+local Button = Tab:CreateButton({
+   Name = "Xk5ng (Keyless 1st)",
+   Callback = function()
+   getgenv()._="Join discord.gg/msgabv2t9Q | discord.gg/stando to get latest update. | If you pay for this script you get scammed, this script is completely free ok"
+getgenv().UiSize = 1
+loadstring(game:HttpGet("https://xk5ng.github.io/XK5NG"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Auto lettuce farm",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/phowg-host/auto_lettuce.lua/refs/heads/main/%40x67bondc"))()
+   end,
+})
+-- \--------------------------/ Do not get near this part
+local Tab = Window:CreateTab("Update logs", "scroll-text")
+local Section = Tab:CreateSection("Luk.z 0.1.5 (Latest verison)")
+local Label = Tab:CreateLabel("Luk.z 0.1.5", "notebook-text")
+local Label = Tab:CreateLabel("Thanks to my brother kayhascame for helping make 0.1.5", "notebook-text")
+local Label = Tab:CreateLabel("Added Rivals (3 scripts)", "notebook-text")
+local Label = Tab:CreateLabel("Added Murders vs sheriff (1 script)", "notebook-text")
+local Label = Tab:CreateLabel("Added Raise a floppa 2 (2 scripts)", "notebook-text")
+local Label = Tab:CreateLabel("Added Throw stuff for money (1 script)", "notebook-text")
+local Label = Tab:CreateLabel("Added The 100,000,000 glass bridge (3 scripts)", "notebook-text")
+local Label = Tab:CreateLabel("Added Hypershot (2 scripts)", "notebook-text")
+local Label = Tab:CreateLabel("Added Dahood (1 script)", "notebook-text")
+local Button = Tab:CreateButton({
+   Name = "Copy discord",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Luk.z Said",
+   Content = "Copied",
+   Duration = 6.5,
+   Image = "Smile",
+})
+setclipboard("https://discord.gg/Dw24WswYAv")
+   end,
+})
+local Tab = Window:CreateTab("Universal", "Layout-Grid")
+local Section = Tab:CreateSection("Universal scripts")
+local Button = Tab:CreateButton({
+   Name = "Infinite yield FE",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Orca hub",
+   Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/snapshot.lua"))()
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Instant Prompt",
+   Callback = function()
+      Rayfield:Notify({
+   Title = "Successfully Made instant",
+   Content = "Makes E interactions instant.",
+   Duration = 6.5,
+   Image = "key",
+})
+local ProximityPromptService = game:GetService("ProximityPromptService")
+local instantInteractEnabled = true
+
+ProximityPromptService.PromptButtonHoldBegan:Connect(function(prompt, player)
+    if instantInteractEnabled then
+        fireproximityprompt(prompt)
+    end
+end)
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Unlock Fps",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Successfully Unlocked",
+   Content = "Removed the 60 FPS cap.",
+   Duration = 6.5,
+   Image = "key",
+})
+   setfpscap(999999999999)
+   end,
+})
+task.wait(8.5)
+Rayfield:Notify({
+   Title = "Luk.z Said",
+   Content = "Unsure of what the 1st/2nd/3rd mean? meaning = script rank",
+   Duration = 10,
+   Image = "moon",
+})
+local questions = {
+    "Enjoying our script? Join our discord!",
+    "Thank you for using our script!",
+    "Got suggestions or feedback? Drop by our Discord and let us know!",
+}
+while true do
+    for i = 1, #questions do
+        task.wait(75)
+
+        Rayfield:Notify({
+            Title = "Luk.z",
+            Content = questions[i],
+            Duration = 9,
+            Image = "moon",
+        })
+    end
+end
